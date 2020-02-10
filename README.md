@@ -1,1 +1,1 @@
-# Presentations-Template
+# Presentations Template
