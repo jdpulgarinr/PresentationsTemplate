@@ -1,4 +1,5 @@
-
+*.snm
+*.nav
 *.acn
 *.aux
 *.idx
