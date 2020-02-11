@@ -1,0 +1,95 @@
+\mode<presentation>
+
+%--------------------------------------------------------------------------------------
+% Title Page
+%--------------------------------------------------------------------------------------
+\defbeamertemplate*{title page}{LIGHT}{
+	\begin{center}		
+		{\usebeamerfont{title}\usebeamercolor{title}\inserttitle}\par
+		{\usebeamerfont{subtitle}\usebeamercolor{subtitle}\insertsubtitle}\par
+		\vfill
+		
+		\vfill
+		{\usebeamerfont{author}\usebeamercolor{author}\insertauthor}\par\bigskip
+		{\usebeamerfont{institute}\usebeamercolor{institute}\insertinstitute}\par\bigskip
+		{\usebeamerfont{date}\usebeamercolor{date}}\insertdate\par
+	\end{center}
+	\addtocounter{framenumber}{-2}
+}
+%--------------------------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------------------------
+% Blocks
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{blocks}[default]
+%--------------------------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------------------------
+% Bibliography
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{bibliography item}[book]
+%--------------------------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------------------------
+% Figures
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{caption}[numbered]
+%--------------------------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------------------------
+% Lists
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{itemize subitem}[circle]
+%--------------------------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------------------------
+% Table of Contents
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+%--------------------------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------------------------
+% Section and Subsection Pages
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{section page}
+{	
+	\begin{centering}
+			\vfill
+			\usebeamerfont{sectiontitle}
+			\textcolor{white}{\MakeUppercase{\insertsection}}
+			\vfill
+	\end{centering}
+}
+
+\AtBeginSection[]{
+	\begingroup
+		\setbeamercolor{background canvas}{bg=black}
+		\begin{frame}[plain, noframenumbering]{}
+			\sectionpage
+		\end{frame}
+	\endgroup
+}
+
+\AtBeginSubsection[]
+{
+	\begin{frame}
+		\frametitle{Contents}
+		\tableofcontents[currentsection, currentsubsection]
+	\end{frame}
+}
+%--------------------------------------------------------------------------------------
+
+\mode<all>
