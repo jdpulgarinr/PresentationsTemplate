@@ -1,2 +1,14 @@
-*.aux
 
+*.acn
+*.aux
+*.idx
+*.ilg
+*.ind
+*.ist
+*.log
+*.mst
+*.nlo
+*.out
+*.synctex.gz
+*.toc
+*.DS_Store
