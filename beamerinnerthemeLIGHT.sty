@@ -1,7 +1,9 @@
 \mode<presentation>
 
+% Justification of Lists and Text in Frames
 \RequirePackage{ragged2e}
-\renewcommand{\raggedright}{\justifying}
+\renewcommand{\raggedright}{\justifying} % Lists
+\apptocmd{\frame}{}{\justifying}{} % Frames
 
 %--------------------------------------------------------------------------------------
 % Title Page
