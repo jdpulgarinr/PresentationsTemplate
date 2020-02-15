@@ -1,9 +1,18 @@
 \mode<presentation>
 
-% Justification of Lists and Text in Frames
+%--------------------------------------------------------------------------------------
+% Text Justification
+%--------------------------------------------------------------------------------------
+% Justification of Lists
 \RequirePackage{ragged2e}
-\renewcommand{\raggedright}{\justifying} % Lists
-\apptocmd{\frame}{}{\justifying}{} % Frames
+\renewcommand{\raggedright}{\justifying}
+
+% Justification of Text Inside the Frames
+\apptocmd{\frame}{}{\justifying}{}
+
+% Justification of Text Inside Blocks
+\addtobeamertemplate{block begin}{}{\justifying}{}
+%--------------------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------------------
 % Title Page
