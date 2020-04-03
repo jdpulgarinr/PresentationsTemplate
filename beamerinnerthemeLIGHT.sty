@@ -11,8 +11,10 @@
 \apptocmd{\frame}{}{\justifying}{}
 
 % Justification of Text Inside Blocks
-\addtobeamertemplate{block begin}{}{\justifying}{}
+\setbeamertemplate{block begin}{}{\justifying}
 %--------------------------------------------------------------------------------------
+
+
 
 %--------------------------------------------------------------------------------------
 % Title Page
@@ -24,7 +26,7 @@
 		\vfill
 		
 		\vfill
-		{\usebeamerfont{author}\usebeamercolor{author}\insertauthor}\par\bigskip
+		{\usebeamerfont{author}\usebeamercolor{author}\insertauthor}\par\bigskip\bigskip
 		{\usebeamerfont{institute}\usebeamercolor{institute}\insertinstitute}\par\bigskip
 		{\usebeamerfont{date}\usebeamercolor{date}}\insertdate\par
 	\end{center}
