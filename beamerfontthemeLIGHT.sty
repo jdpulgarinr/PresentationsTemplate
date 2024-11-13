@@ -1,7 +1,15 @@
 \mode<presentation>
 
-\usefonttheme{professionalfonts} %Esta opción muestra las ecuaciones con una fuente elegante.  
-%\usefonttheme{serif} %No se recomiendan las letras con remate (serif) para visualización en pantallas. Sí se recomiendan para visualizar en papel, porque cansan menos la vista.
+\usepackage{fontspec}
+\setsansfont{Helvetica}[
+BoldFont = *-Bold, % Asegura el uso de negrita
+ItalicFont = *-Oblique,
+]
+\renewcommand{\familydefault}{\sfdefault}
+
+
+% Configuración de estilos de fuente en Beamer
+\usefonttheme{professionalfonts} % Muestra las ecuaciones con una fuente elegante
 
 \setbeamerfont{title}{size=\huge, shape=\scshape\bfseries}
 \setbeamerfont{subtitle}{size=\LARGE, shape=\scshape\normalfont, parent=structure}
@@ -12,7 +20,7 @@
 
 \setbeamerfont{sectiontitle}{size=\LARGE, series=\scshape\bfseries}
 \setbeamerfont{subsectiontitle}{size=\Large, series=\scshape\bfseries}
-\setbeamerfont{frametitle}{size=\Large, series=\bfseries} 
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
 
 \setbeamerfont{footline}{size=\scriptsize}
 
