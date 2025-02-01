@@ -10,9 +10,11 @@
 \useoutertheme{LIGHT}
 \usecolortheme{LIGHT}
 
-%\setbeamertemplate{navigation symbols}{}
-%%\setbeamertemplate{blocks}[rounded][shadow=true]  
+% Restaurar números de sección en tabla de contenido
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
 
-% Justification of Text Inside Blocks (For some reason it does not work when in the innertheme)
+% Justificación de texto en bloques
 \addtobeamertemplate{block begin}{}{\justifying}
+
 \mode<all>

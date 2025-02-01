@@ -6,10 +6,13 @@
 \usenavigationsymbolstemplate{}
 
 \setbeamertemplate{footline}
-{	% The beamercolorbox environment is defined in the Beamer User's Guide section 12.4
-	\begin{beamercolorbox}[wd=\paperwidth, ht = 2.25ex, dp = 1ex]{section in head/foot}
-		\insertsectionnavigationhorizontal{\paperwidth}{}{\hfill\insertframenumber/\inserttotalframenumber\hspace{1.5em}}
-	\end{beamercolorbox}
+{    
+    \begin{beamercolorbox}[wd=\paperwidth, ht = 2.25ex, dp = 1ex]{section in head/foot}
+        \insertsectionnavigationhorizontal{\paperwidth}{}{\hfill\insertframenumber/\inserttotalframenumber\hspace{1.5em}}
+    \end{beamercolorbox}
 }
+
+\setbeamerfont{footline}{size=\footnotesize}
+
 
 \mode<all>

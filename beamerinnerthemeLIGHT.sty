@@ -11,104 +11,70 @@
 \apptocmd{\frame}{}{\justifying}{}
 
 % Justification of Text Inside Blocks
-\setbeamertemplate{block begin}{}{\justifying}
-%--------------------------------------------------------------------------------------
-
-
+\addtobeamertemplate{block begin}{}{\justifying\hspace{5pt}}
 
 %--------------------------------------------------------------------------------------
 % Title Page
 %--------------------------------------------------------------------------------------
 \defbeamertemplate*{title page}{LIGHT}{
-	\begin{center}		
-		\vfill
-		{\usebeamerfont{title}\usebeamercolor{title}\inserttitle}
-		\par
-		{\usebeamerfont{subtitle}\usebeamercolor{subtitle}\insertsubtitle}
-		\vfill
-		{\usebeamerfont{author}\usebeamercolor{author}\insertauthor}
-		\vfill
-		{\usebeamerfont{institute}\usebeamercolor{institute}\insertinstitute}
-		\vfill
-		%{\usebeamerfont{date}\usebeamercolor{date}}\insertdate
-		%\vfill
-	\end{center}
-	\addtocounter{framenumber}{-2}
+    \begin{center}        
+        \vfill
+        {\usebeamerfont{title}\usebeamercolor{title}\inserttitle}
+        \par
+        {\usebeamerfont{subtitle}\usebeamercolor{subtitle}\insertsubtitle}
+        \vfill
+        {\usebeamerfont{author}\usebeamercolor{author}\insertauthor}
+        \vfill
+        {\usebeamerfont{institute}\usebeamercolor{institute}\insertinstitute}
+        \vfill
+    \end{center}
+    \addtocounter{framenumber}{-2}
 }
-%--------------------------------------------------------------------------------------
-
-
 
 %--------------------------------------------------------------------------------------
-% Blocks
+% Section Pages (Pantalla negra con título de sección en blanco)
 %--------------------------------------------------------------------------------------
-\setbeamertemplate{blocks}[rounded][shadow=true]
-%--------------------------------------------------------------------------------------
-
-
-%--------------------------------------------------------------------------------------
-% Bibliography
-%--------------------------------------------------------------------------------------
-\setbeamertemplate{bibliography item}[book]
-%--------------------------------------------------------------------------------------
-
-
-
-%--------------------------------------------------------------------------------------
-% Figures
-%--------------------------------------------------------------------------------------
-\setbeamertemplate{caption}[numbered]
-%--------------------------------------------------------------------------------------
-
-
-
-%--------------------------------------------------------------------------------------
-% Lists
-%--------------------------------------------------------------------------------------
-\setbeamertemplate{itemize items}[square]
-\setbeamertemplate{itemize subitem}[circle]
-%--------------------------------------------------------------------------------------
-
-
-
-%--------------------------------------------------------------------------------------
-% Table of Contents
-%--------------------------------------------------------------------------------------
-\setbeamertemplate{section in toc}[sections numbered]
-\setbeamertemplate{subsection in toc}[subsections numbered]
-%--------------------------------------------------------------------------------------
-
-
-
-%--------------------------------------------------------------------------------------
-% Section and Subsection Pages
-%--------------------------------------------------------------------------------------
-\setbeamertemplate{section page}
-{	
-	\begin{centering}
-			\vfill
-			\usebeamerfont{sectiontitle}
-			\textcolor{white}{\MakeUppercase{\insertsection}}
-			\vfill
-	\end{centering}
+\setbeamercolor{section page}{bg=black, fg=white}
+\setbeamertemplate{section page}{
+    \begin{centering}
+        \vfill
+        \usebeamerfont{sectiontitle}\insertsection\vfill
+    \end{centering}
 }
 
 \AtBeginSection[]{
-	\begingroup
-		\setbeamercolor{background canvas}{bg=black}
-		\begin{frame}[plain, noframenumbering]{}
-			\sectionpage
-		\end{frame}
-	\endgroup
+    \begingroup
+    \setbeamercolor{background canvas}{bg=black}
+    \begin{frame}[plain, noframenumbering]
+        \sectionpage
+    \end{frame}
+    \endgroup
 }
 
-\AtBeginSubsection[]
-{
-	\begin{frame}[plain, noframenumbering]{}
-		\frametitle{Contenido}
-		\tableofcontents[currentsection, currentsubsection]
-	\end{frame}
-}
 %--------------------------------------------------------------------------------------
+% Subsection Content Highlight (Diapositiva de contenido con sección actual resaltada)
+%--------------------------------------------------------------------------------------
+\AtBeginSubsection[]{
+    \begin{frame}
+        \frametitle{Contenido}
+        \tableofcontents[currentsection, currentsubsection]
+    \end{frame}
+}
+
+%--------------------------------------------------------------------------------------
+% Bullet points - Corrección total (niveles de viñetas, sin afectar listas numeradas)
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{itemize item}[circle] % Nivel 1 - Círculo negro sólido
+\setbeamertemplate{itemize subitem}[circle] % Nivel 2 - Círculo negro sólido
+\setbeamertemplate{itemize subsubitem}[circle] % Nivel 3 - Círculo hueco
+
+% Mantener los colores correctos en listas numeradas y con viñetas
+\setbeamercolor{itemize item}{bg=black} 
+\setbeamercolor{itemize subitem}{bg=black} 
+\setbeamercolor{itemize subsubitem}{fg=black} 
+
+\setbeamercolor{enumerate item}{fg=black}
+\setbeamercolor{enumerate subitem}{fg=black}
+\setbeamercolor{enumerate subsubitem}{fg=black}
 
 \mode<all>

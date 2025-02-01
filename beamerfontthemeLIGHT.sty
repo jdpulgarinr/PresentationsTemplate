@@ -1,37 +1,35 @@
 \mode<presentation>
 
-\usepackage{fontspec}
-\setsansfont{Helvetica}[
-BoldFont = *-Bold, % Asegura el uso de negrita
-ItalicFont = *-Oblique,
+\usepackage{mathspec}  % mathspec ya carga fontspec, así que lo removemos
+\setsansfont{TeX Gyre Heros}[
+    BoldFont = *-Bold, % Asegura el uso de negrita
+    ItalicFont = *-Italic, % Cambiar de Oblique a Italic para compatibilidad en macOS
 ]
+\setmathfont{TeX Gyre Heros}
 \renewcommand{\familydefault}{\sfdefault}
-
 
 % Configuración de estilos de fuente en Beamer
 \usefonttheme{professionalfonts} % Muestra las ecuaciones con una fuente elegante
 
-\setbeamerfont{title}{size=\huge, shape=\scshape\bfseries}
-\setbeamerfont{subtitle}{size=\LARGE, shape=\scshape\normalfont, parent=structure}
+\setbeamerfont{title}{size=\huge, series=\bfseries}
+\setbeamerfont{subtitle}{size=\huge, series=\normalfont, parent=structure}
 \setbeamerfont{author}{size=\large}
+\setbeamerfont{institute}{size=\large, series=\normalfont}
+\setbeamerfont{date}{size=\small, series=\normalfont}
 
-\setbeamerfont{institute}{size=\large, shape=\scshape\normalfont}
-\setbeamerfont{date}{size=\large, shape=\scshape\normalfont}
-
-\setbeamerfont{sectiontitle}{size=\LARGE, series=\scshape\bfseries}
-\setbeamerfont{subsectiontitle}{size=\Large, series=\scshape\bfseries}
+\setbeamerfont{sectiontitle}{size=\LARGE, series=\bfseries}
+\setbeamerfont{subsectiontitle}{size=\Large, series=\bfseries}
 \setbeamerfont{frametitle}{size=\Large, series=\bfseries}
 
-\setbeamerfont{footline}{size=\scriptsize}
+\setbeamerfont{footline}{size=\footnotesize}
 
-\setbeamerfont{description item}{shape=\bfseries}
+\setbeamerfont{description item}{series=\bfseries}
+\setbeamerfont{caption name}{series=\bfseries}
 
-\setbeamerfont{caption name}{shape=\bfseries}
-
-\setbeamerfont{bibliography item}{size=\small, shape=\scshape}
-\setbeamerfont{bibliography entry author}{size=\small, shape=\scshape}
-\setbeamerfont{bibliography entry title}{size=\small, series=\scshape\bfseries}
-\setbeamerfont{bibliography entry location}{size=\small, shape=\scshape\normalfont}
-\setbeamerfont{bibliography entry note}{size=\small, shape=\scshape\normalfont}
+\setbeamerfont{bibliography item}{size=\small, series=\bfseries}
+\setbeamerfont{bibliography entry author}{size=\small, series=\bfseries}
+\setbeamerfont{bibliography entry title}{size=\small, series=\bfseries}
+\setbeamerfont{bibliography entry location}{size=\small, series=\normalfont}
+\setbeamerfont{bibliography entry note}{size=\small, series=\normalfont}
 
 \mode<all>
