@@ -1,5 +1,8 @@
 \mode<presentation>
 
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+
 \newfontfamily\Raleway[Ligatures=TeX]{Raleway}
 \newfontfamily\Lato[Ligatures=TeX]{Lato}
 
@@ -12,6 +15,12 @@ BoldFont=*-Bold,
 BoldItalicFont=*-BoldItalic
 ]
 \setmonofont{Hack}
+
+
+
+% Configuración de fuente matemática
+\setmathfont{STIX Two Math}  % O Libertinus Math, XITS Math, etc.
+
 
 \setbeamerfont{title page}{family=\Raleway}
 \setbeamerfont{title page title}{size=\LARGE,series=\bfseries}
