@@ -3,7 +3,10 @@
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
 
-\newfontfamily\Raleway[Ligatures=TeX]{Raleway}
+% Configuración de fuente matemática
+\setmathfont{STIX Two Math}  % O Libertinus Math, XITS Math, etc.
+
+\newfontfamily\Raleway[Ligatures=TeX]{Lato}
 \newfontfamily\Lato[Ligatures=TeX]{Lato}
 
 \usefonttheme{professionalfonts}
@@ -17,12 +20,7 @@ BoldItalicFont=*-BoldItalic
 \setmonofont{Hack}
 
 
-
-% Configuración de fuente matemática
-\setmathfont{STIX Two Math}  % O Libertinus Math, XITS Math, etc.
-
-
-\setbeamerfont{title page}{family=\Raleway}
+\setbeamerfont{title page}{family=\Lato}
 \setbeamerfont{title page title}{size=\LARGE,series=\bfseries}
 \setbeamerfont{title page author}{size=\footnotesize}
 \setbeamerfont{title page institute}{size=\scriptsize}
@@ -30,7 +28,7 @@ BoldItalicFont=*-BoldItalic
 \setbeamerfont{caption}{size=\footnotesize}
 
 
-\setbeamerfont{sectiontitle}{family=\Raleway,size=\Large,series=\bfseries}
-\setbeamerfont{subsectiontitle}{family=\Raleway,size=\Large,series=\bfseries}
+\setbeamerfont{sectiontitle}{family=\Lato,size=\Large,series=\bfseries}
+\setbeamerfont{subsectiontitle}{family=\Lato,size=\Large,series=\bfseries}
 
 \mode<all>
