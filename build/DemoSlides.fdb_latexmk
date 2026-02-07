@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1770433703.18647 "build/DemoSlides.xdv" "build/DemoSlides.pdf" "build/DemoSlides" 1770433703.9644 0
-  "build/DemoSlides.xdv" 1770433702.9968 45472 5813a4f673b79f3b32b9567ae1696110 "xelatex"
+["xdvipdfmx"] 1770433932.01705 "build/DemoSlides.xdv" "build/DemoSlides.pdf" "build/DemoSlides" 1770433932.88367 0
+  "build/DemoSlides.xdv" 1770433931.82767 45472 739048806cdbb9c0edf8e014904ea4d0 "xelatex"
   (generated)
   "build/DemoSlides.pdf"
   (rewritten before read)
-["xelatex"] 1770433700.44741 "/Users/jdpulgarinr/Documents/GitHub/PresentationsTemplate/DemoSlides.tex" "build/DemoSlides.xdv" "DemoSlides" 1770433703.95918 0
+["xelatex"] 1770433929.20105 "/Users/jdpulgarinr/Documents/GitHub/PresentationsTemplate/DemoSlides.tex" "build/DemoSlides.xdv" "DemoSlides" 1770433932.87917 0
   "/Users/jdpulgarinr/Documents/GitHub/PresentationsTemplate/DemoSlides.tex" 1770433238.18425 1483 fe9af3f0c6b7666c3155c0e2066a4899 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -209,10 +209,10 @@
   "beamerinnerthemesimplex.sty" 1770429335.83325 2984 226fa85b0c69e4bf492f63138d11a23a ""
   "beamerouterthemesimplex.sty" 1770430679.38764 522 2b1ecf183d1cd46f305aec7aa9c09d40 ""
   "beamerthemesimplex.sty" 1770415565.18814 576 30075bd439b41889be7f16366016fdc2 ""
-  "build/DemoSlides.aux" 1770433702.9934 4032 6329d374c556fbb2a8d656827588a1eb "xelatex"
-  "build/DemoSlides.nav" 1770433702.99529 2328 ea40a6ee471f237a12cad94b9aa259e7 "xelatex"
-  "build/DemoSlides.out" 1770433702.99478 707 b7a5ee0b2595590b99fd2d137e039023 "xelatex"
-  "build/DemoSlides.toc" 1770433702.99535 313 2d75774e449235afb28926f80b1ceaf7 "xelatex"
+  "build/DemoSlides.aux" 1770433931.82417 4032 6329d374c556fbb2a8d656827588a1eb "xelatex"
+  "build/DemoSlides.nav" 1770433931.82618 2328 ea40a6ee471f237a12cad94b9aa259e7 "xelatex"
+  "build/DemoSlides.out" 1770433931.82561 707 b7a5ee0b2595590b99fd2d137e039023 "xelatex"
+  "build/DemoSlides.toc" 1770433931.82625 313 2d75774e449235afb28926f80b1ceaf7 "xelatex"
   (generated)
   "build/DemoSlides.aux"
   "build/DemoSlides.log"
