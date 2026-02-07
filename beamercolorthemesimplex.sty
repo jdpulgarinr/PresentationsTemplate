@@ -1,56 +1,92 @@
 \mode<presentation>
 
-% Define Colors
-\definecolor{main}{RGB}{64, 64, 64}
-\definecolor{background}{RGB}{255, 255, 255} % Blanco puro
-\definecolor{alert}{RGB}{120, 0, 0} % Granate oscuro
-\definecolor{example}{RGB}{0, 80, 150} % Azul oscuro desaturado
+% Base absoluto
+\definecolor{textblack}{RGB}{0,0,0}
+\definecolor{purewhite}{RGB}{255,255,255}
 
-% Title Page
-\setbeamercolor{title}{fg=black} 
-\setbeamercolor{subtitle}{fg=black} 
-\setbeamercolor{author}{fg=black}
-\setbeamercolor{institute}{fg=black}
-\setbeamercolor{date}{fg=black}
+% Colores semánticos (puros y sobrios)
+\definecolor{alertred}{RGB}{150,0,0}
+\definecolor{exampleblue}{RGB}{0,70,160}
+\definecolor{neutralgray}{RGB}{0,0,0} % para bloque normal (negro puro)
 
-% Frames
-\setbeamercolor{frametitle}{fg=black}
-\setbeamercolor{normal text}{fg=black, bg=white}
-\setbeamercolor{alerted text}{fg=alert}
-\setbeamercolor{example text}{fg=example}
+% Muted (fondos suaves del cuerpo)
+\definecolor{MutedRed}{rgb}{0.97, 0.92, 0.92}
+\definecolor{MutedGreen}{rgb}{0.92, 0.97, 0.92}
+\definecolor{MutedBlue}{rgb}{0.92, 0.94, 0.98}
+\definecolor{MutedGray}{rgb}{0.95, 0.95, 0.95}
 
-% Table of Contents
-\setbeamercolor{section in toc}{fg=black}
-\setbeamercolor{subsection in toc}{fg=black}
+% Medium (títulos sólidos, sobrios para plantilla B/N)
+\definecolor{MediumRed}{rgb}{0.78, 0.22, 0.22}      % rojo profundo, no grita
+\definecolor{MediumGreen}{rgb}{0.20, 0.55, 0.50}    % verde petrolizado (serio)
+\definecolor{MediumBlue}{rgb}{0.05, 0.28, 0.50}     % azul académico apagado
+\definecolor{MediumGray}{rgb}{0.20, 0.20, 0.20}     % casi negro neutro
 
-% Head/Foot
-\setbeamercolor{footline}{fg=background, bg=black}
-\setbeamercolor{section in head/foot}{fg=white, bg=black}
+% ----------------
+% Texto y fondos
+% ----------------
+\setbeamercolor{normal text}{fg=textblack, bg=purewhite}
+\setbeamercolor{frametitle}{fg=textblack}
 
-% Blocks
-\setbeamercolor{block title}{bg=main!80!background, fg=background}
-\setbeamercolor{block body}{bg=main!10!background, fg=black}
-\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamercolor{title}{fg=textblack}
+\setbeamercolor{subtitle}{fg=textblack}
+\setbeamercolor{author}{fg=textblack}
+\setbeamercolor{institute}{fg=textblack}
+\setbeamercolor{date}{fg=textblack}
 
-\setbeamercolor{block title alerted}{bg=alert, fg=background}
-\setbeamercolor{block body alerted}{bg=alert!10!background, fg=black}
+% ----------------
+% TOC
+% ----------------
+\setbeamercolor{section in toc}{fg=textblack}
+\setbeamercolor{subsection in toc}{fg=textblack}
 
-\setbeamercolor{block title example}{bg=example, fg=background}
-\setbeamercolor{block body example}{bg=example!10!background, fg=black}
+% ----------------
+% Head / foot
+% ----------------
+\setbeamercolor{footline}{fg=textblack, bg=purewhite}
+\setbeamercolor{section in head/foot}{fg=textblack, bg=purewhite}
 
-% Lists (Corrección del color de los niveles de viñetas)
-\setbeamercolor{itemize item}{fg=black} % Nivel 1 - Triángulo negro
-\setbeamercolor{itemize subitem}{fg=black} % Nivel 2 - Círculo negro sólido
-\setbeamercolor{itemize subsubitem}{fg=black} % Nivel 3 - Círculo hueco (ahora forzado a negro)
+% ----------------
+% BLOQUES
+% ----------------
 
-% Figures
-\setbeamercolor{caption name}{fg=black}
+% Bloque normal (gris, coherente con B/N)
+\setbeamercolor{block title}{fg=white, bg=MediumGray}
+\setbeamercolor{block body}{fg=black, bg=MutedGray}
 
-% Bibliography
-\setbeamercolor{bibliography item}{fg=main}
-\setbeamercolor{bibliography entry author}{fg=main!70!black}
-\setbeamercolor{bibliography entry title}{fg=main}
-\setbeamercolor{bibliography entry location}{fg=main}
-\setbeamercolor{bibliography entry note}{fg=main}
+% Bloque ejemplo (azul)
+\setbeamercolor{block title example}{fg=white, bg=MediumBlue}
+\setbeamercolor{block body example}{fg=black, bg=MutedBlue}
+
+% Bloque alerta (rojo)
+\setbeamercolor{block title alerted}{fg=white, bg=MediumRed}
+\setbeamercolor{block body alerted}{fg=black, bg=MutedRed}
+
+% Si usas block "example" como verde en tu doc, deja esto también:
+\setbeamercolor{block title example}{fg=white, bg=MediumGreen}
+\setbeamercolor{block body example}{fg=black, bg=MutedGreen}
+
+% Caja redondeada sin sombra (minimalista). Si quieres sombra, cambia a true.
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+% ----------------
+% Listas
+% ----------------
+\setbeamercolor{itemize item}{fg=textblack}
+\setbeamercolor{itemize subitem}{fg=textblack}
+\setbeamercolor{itemize subsubitem}{fg=textblack}
+
+% ----------------
+% Figuras
+% ----------------
+\setbeamercolor{caption name}{fg=textblack}
+
+% ----------------
+% Bibliografía
+% ----------------
+\setbeamercolor{bibliography item}{fg=textblack}
+\setbeamercolor{bibliography entry author}{fg=textblack}
+\setbeamercolor{bibliography entry title}{fg=textblack}
+\setbeamercolor{bibliography entry location}{fg=textblack}
+\setbeamercolor{bibliography entry note}{fg=textblack}
 
 \mode<all>

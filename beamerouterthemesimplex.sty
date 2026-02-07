@@ -1,18 +1,25 @@
 \mode<presentation>
-\RequirePackage{tikz}
 
-% Footline
+% Footline: izquierda = sección actual, derecha = numeración, con padding
 
-\usenavigationsymbolstemplate{}
+\setbeamertemplate{navigation symbols}{}
 
 \setbeamertemplate{footline}
-{    
-    \begin{beamercolorbox}[wd=\paperwidth, ht = 2.25ex, dp = 1ex]{section in head/foot}
-        \insertsectionnavigationhorizontal{\paperwidth}{}{\hfill\insertframenumber/\inserttotalframenumber\hspace{1.5em}}
-    \end{beamercolorbox}
+{%
+  \begin{beamercolorbox}[
+      wd=\paperwidth,
+      ht=2.25ex,
+      dp=1ex,
+      leftskip=1.2em,
+      rightskip=1.2em
+    ]{section in head/foot}%
+    \usebeamerfont{footline}%
+    \insertsectionhead%
+    \hfill%
+    \insertframenumber/\inserttotalframenumber%
+  \end{beamercolorbox}%
 }
 
 \setbeamerfont{footline}{size=\footnotesize}
-
 
 \mode<all>

@@ -3,32 +3,36 @@
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
 
-% Configuración de fuente matemática
-\setmathfont{STIX Two Math}  % O Libertinus Math, XITS Math, etc.
-
-\newfontfamily\Raleway[Ligatures=TeX]{Lato}
-\newfontfamily\Lato[Ligatures=TeX]{Lato}
-
 \usefonttheme{professionalfonts}
 
-\setsansfont{Lato}[
-UprightFont=*-Regular,
-ItalicFont=*-Italic,
-BoldFont=*-Bold,
-BoldItalicFont=*-BoldItalic
-]
-\setmonofont{Hack}
+% Matemáticas
+\setmathfont{latinmodern-math.otf}
 
+% Texto
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
 
-\setbeamerfont{title page}{family=\Lato}
+\newfontfamily\SimplexSans[Ligatures=TeX]{Helvetica Neue}
+
+% -------------------------
+% Ajuste de jerarquías
+% -------------------------
+
+% Portada
+\setbeamerfont{title page}{family=\SimplexSans}
 \setbeamerfont{title page title}{size=\LARGE,series=\bfseries}
-\setbeamerfont{title page author}{size=\footnotesize}
-\setbeamerfont{title page institute}{size=\scriptsize}
-\setbeamerfont{frametitle}{family=\Raleway,size=\large,series=\bfseries}
+\setbeamerfont{title page author}{size=\large}
+\setbeamerfont{title page institute}{size=\normalsize}
+\setbeamerfont{title page date}{size=\normalsize}
+
+% Frame title
+\setbeamerfont{frametitle}{family=\SimplexSans,size=\Large,series=\bfseries}
+
+% Captions
 \setbeamerfont{caption}{size=\footnotesize}
 
-
-\setbeamerfont{sectiontitle}{family=\Lato,size=\Large,series=\bfseries}
-\setbeamerfont{subsectiontitle}{family=\Lato,size=\Large,series=\bfseries}
+% Secciones
+\setbeamerfont{sectiontitle}{family=\SimplexSans,size=\Large,series=\bfseries}
+\setbeamerfont{subsectiontitle}{family=\SimplexSans,size=\large,series=\bfseries}
 
 \mode<all>
